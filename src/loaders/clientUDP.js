@@ -2,7 +2,7 @@ const dgram = require('dgram');
 
 const client = dgram.createSocket('udp4');
 
-const port = 12345;
+const port = 3002;
 const serverAddress = 'localhost';
 
 const message = '1;5;VVFFV';
@@ -21,7 +21,6 @@ function StartClientUDP(){
     client.close();
   });
   
-
 }
 
 module.exports = StartClientUDP
